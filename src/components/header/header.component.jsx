@@ -30,7 +30,6 @@ const Header = ({ currentUser, history }) => (
       ) : (
         <Link className="option" to="/signin">
           SIGN IN
-          {console.log(currentUser)}
         </Link>
       )}
     </div>
