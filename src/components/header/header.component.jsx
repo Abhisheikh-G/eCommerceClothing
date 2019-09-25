@@ -3,7 +3,7 @@ import "./header.styles.scss";
 import { Link } from "react-router-dom";
 import { auth } from "../../firebase/firebase.utils";
 import { ReactComponent as Logo } from "../../assets/crown.svg";
-import { withRouter } from "react-router-dom";
+import { connect } from "react-redux";
 
 const Header = ({ currentUser, history }) => (
   <div className="header">
@@ -36,4 +36,8 @@ const Header = ({ currentUser, history }) => (
   </div>
 );
 
-export default withRouter(Header);
+const mapStateToProps = state => ({
+  currentUser: state.user.currentUser
+});
+
+export default connect(mapStateToProps)(Header);
