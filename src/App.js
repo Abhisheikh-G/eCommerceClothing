@@ -7,7 +7,11 @@ import ShopPage from "./pages/shop/shop.component";
 import CheckoutPage from "./pages/checkout/checkout.component";
 import SignInAndSignUpPage from "./pages/sign-in-and-sign-up/sign-in-and-sign-up.component";
 
-import { auth, createUserProfileDocument } from "./firebase/firebase.utils";
+import {
+  auth,
+  createUserProfileDocument,
+  addCollectionAndDocuments
+} from "./firebase/firebase.utils";
 import { connect } from "react-redux";
 import "./App.css";
 import { setCurrentUser } from "./redux/user/user.actions";
@@ -31,9 +35,8 @@ class App extends React.Component {
             }
           });
         });
-      } else {
-        setCurrentUser(userAuth);
       }
+      setCurrentUser(userAuth);
     });
   }
 
