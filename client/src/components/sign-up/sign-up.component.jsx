@@ -1,9 +1,12 @@
 import React, { useState } from "react";
+import { connect } from "react-redux";
+
 import FormInput from "../form-input/form-input.component";
 import CustomButton from "../custom-button/custom-button.component";
-import { connect } from "react-redux";
+
 import { signUpStart } from "../../redux/user/user.actions";
-import "./sign-up.styles.scss";
+
+import { SignUpContainer, SignUpTitle } from "./sign-up.styles";
 
 const SignUp = ({ signUpStart }) => {
   const [userCredentials, setUserCredentials] = useState({
@@ -15,24 +18,27 @@ const SignUp = ({ signUpStart }) => {
 
   const { displayName, email, password, confirmPassword } = userCredentials;
 
-  const handleSubmit = async e => {
-    e.preventDefault();
+  const handleSubmit = async event => {
+    event.preventDefault();
+
     if (password !== confirmPassword) {
-      alert("Passwords do not match");
+      alert("passwords don't match");
       return;
     }
+
     signUpStart({ displayName, email, password });
   };
 
-  const handleChange = e => {
-    const { name, value } = e.target;
+  const handleChange = event => {
+    const { name, value } = event.target;
+
     setUserCredentials({ ...userCredentials, [name]: value });
   };
 
   return (
-    <div className="sign-up">
-      <h2 className="title">I do not have an account</h2>
-      <span className="subtitle">Sign up with your email and password</span>
+    <SignUpContainer>
+      <SignUpTitle>I do not have a account</SignUpTitle>
+      <span>Sign up with your email and password</span>
       <form className="sign-up-form" onSubmit={handleSubmit}>
         <FormInput
           type="text"
@@ -68,7 +74,7 @@ const SignUp = ({ signUpStart }) => {
         />
         <CustomButton type="submit">SIGN UP</CustomButton>
       </form>
-    </div>
+    </SignUpContainer>
   );
 };
 
