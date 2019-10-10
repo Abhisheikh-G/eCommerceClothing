@@ -4,7 +4,7 @@ export const SignInContainer = styled.div`
   width: 380px;
   display: flex;
   flex-direction: column;
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 500px) {
     width: auto;
   }
 `;
