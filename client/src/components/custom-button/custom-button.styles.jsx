@@ -58,4 +58,7 @@ export const CustomButtonContainer = styled.button`
   font-weight: bolder;
   cursor: pointer;
   ${getButtonStyles}
+  @media screen and (max-width: 400px) {
+    width: 270px;
+  }
 `;
