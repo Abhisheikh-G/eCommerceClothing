@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const CheckoutItemContainer = styled.div`
   width: 100%;
@@ -33,6 +33,9 @@ export const QuantityContainer = styled(TextContainer)`
 
   div {
     cursor: pointer;
+  }
+
+  @media screen and (max-width: 800px) {
   }
 `;
 
