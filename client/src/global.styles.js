@@ -31,12 +31,12 @@ body {
 
   .fade-appear-active {
     opacity: 1;
-    transition: opacity 500ms ease-in;
+    transition: opacity 1000ms ease-in;
   }
   
   .fade-enter.fade-enter-active {
     opacity: 1;
-    transition: opacity 500ms ease-in;
+    transition: opacity 1000ms ease-in;
   }
   
   .fade-exit {

@@ -28,7 +28,7 @@ const App = ({ checkUserSession, currentUser }) => {
             <CSSTransition
               appear={true}
               key={location.key}
-              timeout={600}
+              timeout={1000}
               classNames="fade"
             >
               <Switch location={location}>
