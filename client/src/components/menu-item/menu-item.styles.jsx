@@ -74,9 +74,15 @@ export const ContentTitle = styled.span`
   margin-bottom: 6px;
   font-size: 22px;
   color: #4a4a4a;
+  @media screen and (max-width: 500px) {
+    font-size: 18px;
+  }
 `;
 
 export const ContentSubtitle = styled.span`
   font-weight: lighter;
   font-size: 16px;
+  @media screen and (max-width: 500px) {
+    font-size: 14px;
+  }
 `;
