@@ -18,6 +18,9 @@ export const HeaderContainer = styled.div`
     padding: 10px;
     margin-bottom: 20px;
   }
+  @media screen and (max-width: 380px) {
+    font-size: 14px;
+  }
 `;
 
 export const LogoContainer = styled(Link)`

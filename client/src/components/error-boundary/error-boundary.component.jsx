@@ -21,7 +21,8 @@ class ErrorBoundary extends React.Component {
   }
 
   render() {
-    if (this.state.hasErrored) {
+    const { PAGE_NOT_FOUND } = this.props;
+    if (this.state.hasErrored || PAGE_NOT_FOUND) {
       return (
         <ErrorImageOverlay>
           <ErrorImageContainer imageUrl="https://i.imgur.com/A040Lxr.png"></ErrorImageContainer>

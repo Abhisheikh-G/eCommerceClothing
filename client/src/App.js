@@ -31,8 +31,8 @@ const App = ({ checkUserSession, currentUser }) => {
               timeout={1000}
               classNames="fade"
             >
-              <Switch location={location}>
-                <ErrorBoundary>
+              <ErrorBoundary>
+                <Switch location={location}>
                   <Route exact path="/" component={HomePage} />
                   <Route path="/shop" component={ShopPage} />
                   <Route exact path="/checkout" component={CheckoutPage} />
@@ -47,8 +47,11 @@ const App = ({ checkUserSession, currentUser }) => {
                       )
                     }
                   />
-                </ErrorBoundary>
-              </Switch>
+                  <Route
+                    render={() => <ErrorBoundary PAGE_NOT_FOUND={true} />}
+                  />
+                </Switch>
+              </ErrorBoundary>
             </CSSTransition>
           </TransitionGroup>
         )}
