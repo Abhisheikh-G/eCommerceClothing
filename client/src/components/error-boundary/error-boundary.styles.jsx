@@ -30,6 +30,7 @@ export const ErrorImageContainer = styled.div`
 export const ErrorImageText = styled.div`
   font-size: 28px;
   color: black;
+  text-align: center;
 
   @media screen and (max-width: 500px) {
     font-size: 20px;
