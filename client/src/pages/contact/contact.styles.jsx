@@ -11,8 +11,16 @@ export const ContactButtonContainer = styled.div`
     width: 250px;
   }
 
-  @media screen and (max-height: 500px) {
+  @media screen and (max-height: 615px) {
     margin-top: 10vh;
+  }
+
+  @media screen and (max-height: 420px) {
+    margin-top: 13vh;
+  }
+
+  @media screen and (max-height: 340px) {
+    margin-top: 15vh;
   }
 `;
 
