@@ -31,7 +31,6 @@ export const fetchCollectionsStartAsync = () => {
       })
       .catch(err => {
         dispatch(fetchCollectionsFailure(err.message));
-        throw Error;
       });
   };
 };

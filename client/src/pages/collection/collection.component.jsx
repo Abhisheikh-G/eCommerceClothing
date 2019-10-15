@@ -13,6 +13,12 @@ import {
 
 const CollectionPage = ({ collection }) => {
   const { title, items } = collection;
+  setTimeout(() => {
+    if (collection.length < 1) {
+      throw Error;
+    }
+  }, 2000);
+
   return (
     <CollectionPageContainer>
       <CollectionTitle>{title.toUpperCase()}</CollectionTitle>
