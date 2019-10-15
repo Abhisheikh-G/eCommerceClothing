@@ -17,7 +17,7 @@ export const ButtonsBarContainer = styled.div`
   display: flex;
   justify-content: space-between;
   width: 100%;
-  @media screen and (max-width: 466px) {
+  @media screen and (max-width: 475px) {
     display: block;
   }
 `;

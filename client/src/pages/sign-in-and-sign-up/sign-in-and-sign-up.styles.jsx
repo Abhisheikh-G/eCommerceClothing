@@ -14,16 +14,12 @@ export const SignInAndSignUpContainer = styled.div`
   }
 
   @media screen and (max-width: 600px) {
-    display: block;
-    width: auto;
     margin: 0 15%;
     text-align: center;
     justify-content: center;
   }
 
   @media screen and (max-width: 500px) {
-    display: block;
-    width: auto;
     margin: 0 10%;
     text-align: center;
     justify-content: center;

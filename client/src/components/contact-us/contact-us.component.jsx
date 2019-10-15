@@ -44,7 +44,7 @@ const ContactUs = () => {
   return (
     <Fade timeout={1000} in>
       <ContactUsContainer>
-        <ContactUsTitle>Send Us A Message</ContactUsTitle>
+        <ContactUsTitle>Send us a Message</ContactUsTitle>
         <span>
           Write a brief message and include your email. We'll get back to you
           A.S.A.P
@@ -54,9 +54,10 @@ const ContactUs = () => {
             <FormControl className={classes.formControl}>
               <TextField
                 multiline
-                rows="4"
+                maxRows="4"
                 id="standard-multiline-flexible"
-                label="Your message here.."
+                label="Your Message"
+                placeholder="Write something here..."
                 name="contactMessage"
                 value={contactMessage}
                 type="email"

@@ -5,10 +5,18 @@ export const ContactButtonContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 10vh auto 1vh;
+  margin: 7.5vh auto 1vh;
 
   @media screen and (max-width: 500px) {
-    width: 220px;
+    width: 250px;
+  }
+
+  @media screen and (max-height: 750px) {
+    margin-top: 10vh;
+  }
+
+  @media screen and (max-height: 500px) {
+    margin-top: 15vh;
   }
 `;
 
@@ -17,28 +25,18 @@ export const ContactContainer = styled.div`
   display: flex;
   justify-content: center;
   margin: auto;
+  text-align: center;
   @media screen and (max-width: 920px) {
-    display: block;
     width: auto;
     margin: 0 25%;
-    text-align: center;
-    justify-content: center;
   }
 
   @media screen and (max-width: 600px) {
-    display: block;
-    width: auto;
     margin: 0 15%;
-    text-align: center;
-    justify-content: center;
   }
 
   @media screen and (max-width: 500px) {
-    display: block;
-    width: auto;
     margin: 0 10%;
-    text-align: center;
-    justify-content: center;
   }
 `;
 
@@ -48,6 +46,6 @@ export const ContactHeader = styled.h1`
   text-align: center;
   font-weight: 300;
   @media screen and (max-width: 500px) {
-    font-size: 28px;
+    font-size: 32px;
   }
 `;
