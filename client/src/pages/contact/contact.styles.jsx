@@ -4,9 +4,14 @@ export const ContactButtonContainer = styled.div`
   width: 600px;
   display: flex;
   justify-content: space-between;
-  margin: 20px auto;
+  margin: 10vh auto;
+
   @media screen and (max-width: 920px) {
     width: 400px;
+  }
+  @media screen and (max-width: 466px) {
+    display: block;
+    width: 220px;
   }
 `;
 

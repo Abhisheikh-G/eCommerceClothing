@@ -27,8 +27,10 @@ const ContactPage = () => {
     <div>
       <ContactHeader>Hi there, leave us a message.</ContactHeader>
       <ContactButtonContainer>
-        <CustomButton onClick={handleClickJoin}> Join Our Team </CustomButton>
-        <CustomButton onClick={handleClickContact}>
+        <CustomButton isContact onClick={handleClickJoin}>
+          Join Our Team
+        </CustomButton>
+        <CustomButton isContact onClick={handleClickContact}>
           Leave Us A Message
         </CustomButton>
       </ContactButtonContainer>

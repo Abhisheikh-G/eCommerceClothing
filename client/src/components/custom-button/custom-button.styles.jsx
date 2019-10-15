@@ -35,9 +35,17 @@ const googleSignInStyle = css`
   }
 `;
 
+const contactUsStyle = css`
+  margin-top: 5px;
+`;
+
 const getButtonStyles = props => {
   if (props.isGoogleSignIn) {
     return googleSignInStyle;
+  }
+
+  if (props.isContact) {
+    return contactUsStyle + buttonStyles;
   }
 
   return props.inverted ? invertedButtonStyle : buttonStyles;
