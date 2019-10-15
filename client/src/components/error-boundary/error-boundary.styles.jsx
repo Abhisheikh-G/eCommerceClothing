@@ -15,12 +15,8 @@ export const ErrorImageContainer = styled.div`
   background-size: 300px;
   background-position: center;
   background-repeat: no-repeat;
-  width: 50vw;
+  width: 100vw;
   height: 50vh;
-
-  @media screen and (max-width: 970px) {
-    width: 100vw;
-  }
 
   @media screen and (max-width: 420px) {
     background-size: 220px;
