@@ -1,16 +1,13 @@
 import styled from "styled-components";
 
 export const ContactButtonContainer = styled.div`
-  width: 600px;
+  width: 300px;
   display: flex;
-  justify-content: space-between;
-  margin: 10vh auto;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10vh auto 1vh;
 
-  @media screen and (max-width: 920px) {
-    width: 400px;
-  }
-  @media screen and (max-width: 466px) {
-    display: block;
+  @media screen and (max-width: 500px) {
     width: 220px;
   }
 `;
@@ -46,8 +43,11 @@ export const ContactContainer = styled.div`
 `;
 
 export const ContactHeader = styled.h1`
-  height: 10vh;
+  height: 1vh;
   font-size: 38px;
   text-align: center;
   font-weight: 300;
+  @media screen and (max-width: 500px) {
+    font-size: 28px;
+  }
 `;
