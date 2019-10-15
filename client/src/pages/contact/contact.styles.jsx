@@ -5,18 +5,14 @@ export const ContactButtonContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 7.5vh auto 1vh;
+  margin: 7vh auto 1vh;
 
   @media screen and (max-width: 500px) {
     width: 250px;
   }
 
-  @media screen and (max-height: 750px) {
-    margin-top: 10vh;
-  }
-
   @media screen and (max-height: 500px) {
-    margin-top: 15vh;
+    margin-top: 10vh;
   }
 `;
 
