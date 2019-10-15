@@ -4,6 +4,7 @@ import {
   ErrorImageContainer,
   ErrorImageText
 } from "./error-boundary.styles";
+import ErrorImage from "../../assets/A040Lxr.png";
 class ErrorBoundary extends React.Component {
   constructor(props) {
     super(props);
@@ -25,7 +26,7 @@ class ErrorBoundary extends React.Component {
     if (this.state.hasErrored || PAGE_NOT_FOUND) {
       return (
         <ErrorImageOverlay>
-          <ErrorImageContainer imageUrl="https://i.imgur.com/A040Lxr.png"></ErrorImageContainer>
+          <ErrorImageContainer imageUrl={ErrorImage}></ErrorImageContainer>
           <ErrorImageText>
             <h1>This Page is Lost in Space</h1>
             <p>Sorry, something went wrong.</p>
